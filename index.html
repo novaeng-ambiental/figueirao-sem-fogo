@@ -1,0 +1,609 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Figueirão Sem Fogo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Campanha Figueirão Sem Fogo, de prevenção a queimadas no Cerrado de Figueirão/MS: conteúdo educativo, jogo, quiz e memória da campanha.">
+<meta name="theme-color" content="#023118">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/css/estilo.css">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="ast" viewBox="0 0 40 40"><g stroke="#1f6616" stroke-width="4" stroke-linecap="round"><path d="M20 5v30M5 20h30M9.4 9.4l21.2 21.2M30.6 9.4L9.4 30.6"/></g></symbol>
+  <symbol id="ic-estudante" viewBox="0 0 54 54"><circle cx="27" cy="27" r="26" fill="#f3f436"/><path d="M12 22l15-7 15 7-15 7z" fill="#023118"/><path d="M18 26v8c0 3 4 6 9 6s9-3 9-6v-8l-9 4z" fill="#1f6616"/><path d="M40 23v10" stroke="#023118" stroke-width="2"/></symbol>
+  <symbol id="ic-produtora" viewBox="0 0 54 54"><circle cx="27" cy="27" r="26" fill="#f3f436"/><path d="M10 40h34" stroke="#023118" stroke-width="3"/><path d="M14 40V30M22 40V30M30 40V30M38 40V30M12 33h30" stroke="#1f6616" stroke-width="3"/><path d="M15 22c0-4 5-7 12-7s12 3 12 7z" fill="#023118"/><path d="M11 22h32" stroke="#023118" stroke-width="3" stroke-linecap="round"/></symbol>
+  <symbol id="ic-motorista" viewBox="0 0 54 54"><circle cx="27" cy="27" r="26" fill="#f3f436"/><path d="M11 32l4-9c1-2 2-3 4-3h16c2 0 3 1 4 3l4 9v6H11z" fill="#1f6616"/><path d="M17 23h20l2 6H15z" fill="#d8fdcf"/><circle cx="18" cy="38" r="4" fill="#023118"/><circle cx="36" cy="38" r="4" fill="#023118"/></symbol>
+</svg>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="envoltorio">
+    <a class="marca" href="#inicio"><img src="midia/img/selo-figueirao-sem-fogo.png" alt="" width="42" height="40">Figueirão Sem Fogo</a>
+    <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav aria-label="Seções do site">
+      <ul class="menu" id="menu">
+        <li><a href="#campanha">Campanha</a></li>
+        <li><a href="#territorio">O Cerrado</a></li>
+        <li><a href="#fogo">Por que proteger</a></li>
+        <li><a href="#prevencao">Como proteger</a></li>
+        <li><a href="#escola">Escola</a></li>
+        <li><a href="#memoria">Memória</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- INÍCIO -->
+<section class="hero" id="inicio" aria-labelledby="titulo-inicio">
+  <div class="envoltorio">
+    <div>
+      <span class="etiqueta">Campanha de prevenção a queimadas · Figueirão/MS</span>
+      <h1 id="titulo-inicio">Cuidar do que é nosso começa <span>antes do fogo</span></h1>
+      <p class="lead">O fogo começa pequeno. A prevenção também. A campanha Figueirão Sem Fogo levou esse recado aos cartazes, ao rádio e às redes da Prefeitura. Aqui ele vai mais longe: conheça o Cerrado de Figueirão, veja o que o fogo leva embora e descubra o que cada um pode fazer antes que ele comece.</p>
+      <div class="acoes">
+        <a class="botao" href="#territorio">Conhecer o Cerrado de Figueirão</a>
+        <a class="botao alerta" href="#prevencao">Viu fogo? Ligue 193</a>
+      </div>
+      <div class="alternador" id="alternador" data-lado="antes">
+        <div class="abas" role="tablist" aria-label="Mensagem do spot da campanha">
+          <button class="antes" type="button" role="tab" id="aba-antes" aria-selected="true" aria-controls="alt-texto">Antes do fogo</button>
+          <button class="depois" type="button" role="tab" id="aba-depois" aria-selected="false" aria-controls="alt-texto" tabindex="-1">Depois do fogo</button>
+        </div>
+        <p id="alt-texto" role="tabpanel" aria-live="polite">A Serra do Figueirão tem fauna, nascentes e histórias para contar.</p>
+        <small>Trecho do spot de rádio da campanha.</small>
+      </div>
+    </div>
+    <div class="hero-selo">
+      <img src="midia/img/selo-figueirao-sem-fogo.png" alt="Selo da campanha Figueirão Sem Fogo: árvore do Cerrado, serra, rio e o símbolo de proibido sobre uma chama, com o slogan Cuidar do que é nosso começa antes do fogo." width="360" height="341">
+      <span class="asterisco" aria-hidden="true"><svg><use href="#ast"/></svg></span>
+    </div>
+  </div>
+</section>
+
+<!-- 1. CAMPANHA -->
+<section class="secao clara" id="campanha" aria-labelledby="t-campanha">
+  <div class="envoltorio">
+    <div class="cabeca">
+      <span class="etiqueta">A campanha</span>
+      <h2 id="t-campanha">Prevenir queimadas é proteger quem vive no Cerrado de Figueirão</h2>
+      <p>A campanha levou à população urbana e rural de Figueirão informação sobre os impactos das queimadas, as atitudes de prevenção e os canais de denúncia, com cartazes, folders, spot de rádio e publicações da Prefeitura.</p>
+    </div>
+    <div class="grade g2">
+      <article class="cartao">
+        <h3>Objetivo</h3>
+        <p>Sensibilizar a população de Figueirão sobre a importância da prevenção de incêndios para a proteção do Monumento Natural Municipal Serra do Figueirão, da Comunidade Quilombola Santa Tereza e da biodiversidade do Cerrado.</p>
+        <h3 style="margin-top:14px">O que a campanha fez</h3>
+        <ul>
+          <li>Fixou cartazes em espaços de circulação de público.</li>
+          <li>Veiculou um spot de rádio de 40 segundos.</li>
+          <li>Publicou a campanha na página da Prefeitura no Facebook e no site oficial da Prefeitura.</li>
+          <li>Produziu folders com o conteúdo “O que existe em Figueirão?”.</li>
+        </ul>
+      </article>
+      <article class="cartao">
+        <dl class="ficha">
+          <dt>Onde</dt><dd>Município de Figueirão/MS, áreas urbana e rural.</dd>
+          <dt>Quando</dt><dd>Veiculação de 19 a 31 de outubro de 2026, no fim da estiagem.</dd>
+          <dt>Estiagem</dt><dd>De julho a outubro, período de maior risco de incêndios na região.</dd>
+          <dt>Público</dt><dd>Moradores das áreas urbana e rural, produtores rurais, estudantes, a Comunidade Quilombola Santa Tereza e as comunidades do entorno do Monumento Natural.</dd>
+          <dt>Realização</dt><dd>Prefeitura Municipal de Figueirão, por meio da Secretaria Municipal de Turismo, Cultura e Meio Ambiente.</dd>
+          <dt>Assessoria</dt><dd>NOVAeng Engenharia, assessoria técnica em educação ambiental.</dd>
+        </dl>
+      </article>
+    </div>
+    <div class="mensagens" aria-label="Mensagens-chave da campanha">
+      <span>Cuidar do que é nosso começa antes do fogo.</span>
+      <span>Proteja a Serra. Proteja vidas.</span>
+      <span>#FigueiraoSemFogo</span>
+    </div>
+    <div class="do-folder">
+      <h3>O folder pergunta, o site aprofunda</h3>
+      <p>O site segue as perguntas do folder e do cartaz da campanha. Cada parte vai além do papel.</p>
+      <ol class="perguntas-folder">
+        <li><a href="#cerrado-importante"><span>Por que o Cerrado é importante para Figueirão?</span><small>Identidade, turismo, economia e qualidade de vida</small></a></li>
+        <li><a href="#o-que-existe"><span>O que existe em Figueirão?</span><small>Serra, comunidade, água, fauna e flora</small></a></li>
+        <li><a href="#fogo"><span>Por que devemos proteger?</span><small>O que o fogo leva embora e como ele começa</small></a></li>
+        <li><a href="#prevencao"><span>Como podemos proteger Figueirão?</span><small>Atitudes de prevenção e canais de denúncia</small></a></li>
+      </ol>
+    </div>
+    <p class="fonte">Fontes: <a href="#f-projeto">projeto da Ação 04</a>; <a href="#f-declaracao">declaração da emissora</a>; <a href="#f-prefeitura">publicações da Prefeitura</a>. A campanha é cíclica e deve se repetir a cada estiagem, de julho a outubro.</p>
+  </div>
+</section>
+
+<!-- 2. TERRITÓRIO -->
+<section class="secao" id="territorio" aria-labelledby="t-territorio">
+  <div class="envoltorio">
+    <div class="cabeca">
+      <span class="etiqueta">O Cerrado de Figueirão</span>
+      <h2 id="t-territorio">Um município de Cerrado, serra e água</h2>
+      <p>Figueirão está no bioma Cerrado. Conhecer o território onde vivemos é também reconhecer aquilo que faz parte da identidade de Figueirão.</p>
+    </div>
+
+    <div class="grade g2" id="cerrado-importante" style="align-items:start">
+      <article class="cartao destaque">
+        <span class="etiqueta">Por que o Cerrado é importante para Figueirão?</span>
+        <ul class="atitudes" style="margin-top:12px">
+          <li><span>Identidade e patrimônio natural.</span></li>
+          <li><span>Turismo: Pedra Bonita, Serra das Araras e Quedas d’Água do Roncador.</span></li>
+          <li><span>Qualidade de vida da população.</span></li>
+          <li><span>Pecuária e economia local.</span></li>
+          <li><span>Desenvolvimento sustentável.</span></li>
+        </ul>
+        <p class="frase-chave">O Cerrado faz parte da história, da economia e do futuro de Figueirão.</p>
+      </article>
+      <figure class="figura">
+        <img src="midia/img/pedra-bonita.jpg" alt="Pedra Bonita, formação rochosa alta e avermelhada sobre um morro com vegetação de Cerrado, sob céu azul com nuvens." width="444" height="323" loading="lazy">
+        <figcaption class="foto-legenda">Pedra Bonita. “Levou milhões de anos para se formar.” Foto: Prefeitura de Figueirão, usada no carrossel da campanha.</figcaption>
+      </figure>
+    </div>
+    <p class="fonte">Fontes: <a href="#f-pecas">folder e cartaz da campanha</a>; <a href="#f-projeto">projeto da Ação 04</a>.</p>
+
+    <div class="cabeca" id="o-que-existe" style="margin-top:40px;margin-bottom:16px">
+      <span class="etiqueta">O que existe em Figueirão?</span>
+      <p>Toda essa riqueza depende de um ambiente saudável e equilibrado.</p>
+    </div>
+    <div class="grade g4">
+      <div class="cartao"><h3>Fauna</h3><p>Silvestre e diversa: mamíferos, aves, répteis, anfíbios e polinizadores típicos do Cerrado.</p></div>
+      <div class="cartao"><h3>Flora</h3><p>Árvores, arbustos, gramíneas e outras espécies adaptadas ao Cerrado.</p></div>
+      <div class="cartao"><h3>Pessoas e cultura</h3><p>Produtores rurais e a Comunidade Quilombola Santa Tereza.</p></div>
+      <div class="cartao"><h3>Recursos hídricos</h3><p>Divisor de águas entre as bacias do Paraguai e do Paraná. Veja o esquema logo abaixo.</p></div>
+    </div>
+    <p class="fonte">Fonte: <a href="#f-pecas">folder tríptico, folder A5 e cartaz A2 da campanha</a>.</p>
+
+    <div class="grade g3" style="margin-top:16px;align-items:start">
+      <article class="cartao">
+        <h3>Monumento Natural Municipal Serra do Figueirão</h3>
+        <p>Unidade de conservação municipal criada pelo Decreto Municipal nº 014/2005, com Plano de Manejo revisado aprovado pelo Decreto Municipal nº 634/2022. Reúne atrativos como a Pedra Bonita e a Serra das Araras.</p>
+        <div class="proporcao" role="img" aria-label="Quadro de 100 quadradinhos que representa a área do município. Um quadradinho, em vermelho, representa a área do Monumento Natural, cerca de 1 por cento."></div>
+        <div class="legenda-prop">
+          <span><b style="background:var(--brasa)"></b>Monumento Natural: 5.047 ha</span>
+          <span><b style="background:var(--superficie-2)"></b>Município: 488.073,6 ha</span>
+        </div>
+        <p class="fonte">A área do Monumento Natural é cerca de 1% da área do município (5.047 ÷ 488.073,6). Fonte: <a href="#f-icms">Resolução Semadesc nº 132/2025</a>; decretos citados no <a href="#f-projeto">projeto da Ação 04</a>.</p>
+      </article>
+      <article class="cartao">
+        <h3>Comunidade Quilombola Santa Tereza</h3>
+        <p>Certificada pela Fundação Cultural Palmares (Portaria nº 32/2005), fica a 53 km da sede do município. Tem escola, roça e pessoas que nasceram ali. A proximidade com pastagens e vegetação nativa torna a comunidade vulnerável ao fogo na estiagem.</p>
+        <p class="fonte">Fonte: <a href="#f-projeto">projeto da Ação 04</a>; <a href="#f-roteiro">carrossel da campanha</a>.</p>
+      </article>
+      <article class="cartao">
+        <h3>Divisor de águas</h3>
+        <p>Figueirão fica no divisor entre as bacias hidrográficas do Paraguai e do Paraná. As duas fazem parte da Bacia do Rio da Prata. Toque numa gota para ver para onde a chuva corre.</p>
+        <svg class="divisor" viewBox="0 0 520 270" role="img" aria-labelledby="divisor-titulo">
+          <title id="divisor-titulo">Esquema do divisor de águas: a chuva que cai de um lado da serra corre para a Bacia do Paraguai e a do outro lado corre para a Bacia do Paraná. As duas se juntam na Bacia do Rio da Prata.</title>
+          <path d="M0 220 L150 170 L230 95 L260 85 L290 97 L370 170 L520 220 L520 270 L0 270Z" fill="var(--broto)"/>
+          <path d="M230 95 L260 85 L290 97" stroke="var(--mata)" stroke-width="3" fill="none" stroke-dasharray="6 4"/>
+          <text x="260" y="22" text-anchor="middle" class="rotulo-forte">DIVISOR DE ÁGUAS</text>
+          <path id="rio-esq" d="M240 104 C200 140 140 180 40 228" stroke="var(--folha)" stroke-width="5" fill="none" stroke-linecap="round" opacity=".35"/>
+          <path id="rio-dir" d="M280 104 C320 140 380 180 480 228" stroke="var(--folha)" stroke-width="5" fill="none" stroke-linecap="round" opacity=".35"/>
+          <text x="16" y="258" class="rotulo-forte" style="fill:#fff">BACIA DO PARAGUAI</text>
+          <text x="504" y="258" text-anchor="end" class="rotulo-forte" style="fill:#fff">BACIA DO PARANÁ</text>
+          <g class="gota" id="gota-esq" tabindex="0" role="button" aria-label="Gota do lado da Bacia do Paraguai">
+            <path d="M205 38 c-8 12 -12 18 -12 24 a12 12 0 0 0 24 0 c0 -6 -4 -12 -12 -24z" fill="#3b8fd4" stroke="var(--mata)" stroke-width="2"/>
+          </g>
+          <g class="gota" id="gota-dir" tabindex="0" role="button" aria-label="Gota do lado da Bacia do Paraná">
+            <path d="M315 38 c-8 12 -12 18 -12 24 a12 12 0 0 0 24 0 c0 -6 -4 -12 -12 -24z" fill="#3b8fd4" stroke="var(--mata)" stroke-width="2"/>
+          </g>
+          <circle id="gota-anda" r="7" fill="#3b8fd4" stroke="var(--mata)" stroke-width="2" cx="-20" cy="-20"/>
+        </svg>
+        <p id="divisor-msg" aria-live="polite" style="font-weight:700">As duas bacias se juntam na Bacia do Rio da Prata.</p>
+        <p class="fonte">Fonte: <a href="#f-pecas">folder e cartaz da campanha</a>. Os rios do município entram na próxima versão, com fonte oficial.</p>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<!-- 3. O FOGO -->
+<section class="secao clara" id="fogo" aria-labelledby="t-fogo">
+  <div class="envoltorio">
+    <div class="cabeca">
+      <span class="etiqueta depois">Por que devemos proteger?</span>
+      <h2 id="t-fogo">O que o fogo leva embora</h2>
+      <p>Proteger Figueirão é cuidar da natureza, da cultura e do futuro. Uma atitude que parece simples pode ser o começo de um incêndio capaz de destruir vidas, paisagens e histórias. Toque nos cartões para virar do antes para o depois.</p>
+    </div>
+    <div class="grade g5" id="cartoes-virar"></div>
+    <p class="fonte">Fonte: <a href="#f-roteiro">carrossel “Antes do fogo / Depois do fogo”</a>; <a href="#f-prefeitura">notícia da Prefeitura de Figueirão</a>.</p>
+
+    <div style="margin-top:44px" class="cabeca">
+      <h3>Como os incêndios começam em Figueirão</h3>
+      <p>O projeto da campanha aponta três causas recorrentes na estiagem. Todas podem ser evitadas.</p>
+    </div>
+    <div class="causas" role="tablist" aria-label="Causas de incêndio">
+      <button type="button" role="tab" id="c-bituca" aria-selected="true" aria-controls="causa-painel">Bituca de cigarro</button>
+      <button type="button" role="tab" id="c-lixo" aria-selected="false" aria-controls="causa-painel" tabindex="-1">Queima de lixo</button>
+      <button type="button" role="tab" id="c-manejo" aria-selected="false" aria-controls="causa-painel" tabindex="-1">Queimada mal controlada</button>
+    </div>
+    <div class="causa-painel" id="causa-painel" role="tabpanel" aria-live="polite"></div>
+    <p class="fonte">Fontes: <a href="#f-projeto">projeto da Ação 04</a>; <a href="#f-lei12305">Lei nº 12.305/2010</a>; <a href="#f-lei9605">Lei nº 9.605/1998</a>; <a href="#f-pecas">peças da campanha</a>.</p>
+
+    <div style="margin-top:44px" class="cabeca">
+      <h3>As palavras do fogo</h3>
+      <p>Nem todo fogo é igual. A Lei nº 14.944/2024, que criou a Política Nacional de Manejo Integrado do Fogo, define cada caso.</p>
+    </div>
+    <div class="termos">
+      <div class="termos-lista" role="tablist" aria-label="Termos da Lei nº 14.944/2024" id="termos-lista"></div>
+      <div class="termo-def" id="termo-def" role="tabpanel" aria-live="polite"></div>
+    </div>
+    <p class="fonte">Fonte: <a href="#f-lei14944">Lei nº 14.944/2024, art. 2º</a>.</p>
+
+    <div style="margin-top:44px" class="grade g2">
+      <div>
+        <div class="cabeca" style="margin-bottom:14px">
+          <h3>O fogo no Cerrado de Mato Grosso do Sul</h3>
+          <p>De 1º de janeiro a 15 de julho, comparando 2025 e 2026.</p>
+        </div>
+        <div class="grafico-caixa">
+          <div class="alterna" role="group" aria-label="Escolha o dado">
+            <button type="button" aria-pressed="true" data-dado="area">Área queimada</button>
+            <button type="button" aria-pressed="false" data-dado="focos">Focos de calor</button>
+          </div>
+          <div class="barras" id="barras" aria-live="polite"></div>
+          <p class="fonte" id="barras-nota"></p>
+        </div>
+      </div>
+      <div>
+        <div class="alerta-alto">
+          <span class="asterisco" aria-hidden="true"><svg><use href="#ast"/></svg></span>
+          <div><strong>Alerta alto no norte de MS</strong>A previsão da probabilidade de fogo para agosto, setembro e outubro de 2026 colocou os municípios das regiões pantaneira, norte e nordeste do estado em “Alerta Alto”. Figueirão fica na Região Norte.</div>
+        </div>
+        <p class="fonte">Fonte: <a href="#f-cemtec">Informativo nº 01/CICOE-PEMIF/2026, Cemtec e Asbom</a>. Os dados de área queimada são do MAQUES-IMASUL/UNIGEO e do INPE, citados no informativo.</p>
+        <div class="cartao" style="margin-top:18px">
+          <h3>Dia de fumaça</h3>
+          <p>A fumaça das queimadas faz mal à saúde. O Ministério da Saúde orienta:</p>
+          <ul class="fumaca">
+            <li>Ficar em ambientes fechados, com portas e janelas fechadas.</li>
+            <li>Beber mais água.</li>
+            <li>Evitar exercício ao ar livre, sobretudo entre 12h e 16h.</li>
+            <li>Se precisar sair, usar máscara N95, PFF2 ou P100 bem ajustada.</li>
+            <li>No carro, janelas fechadas e ar em recirculação.</li>
+            <li>Procurar atendimento ao primeiro sinal de sintomas respiratórios.</li>
+          </ul>
+          <p style="margin-top:8px">Mais cuidado com crianças menores de 5 anos, idosos acima de 60 anos, gestantes e pessoas com doenças do coração, respiratórias ou da imunidade.</p>
+          <p class="fonte">Fonte: <a href="#f-saude">Ministério da Saúde, via Agência Gov, 21/07/2026</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. PREVENÇÃO -->
+<section class="secao" id="prevencao" aria-labelledby="t-prevencao">
+  <div class="envoltorio">
+    <div class="cabeca">
+      <span class="etiqueta">Como podemos proteger Figueirão?</span>
+      <h2 id="t-prevencao">Antes do fogo, pequenas atitudes evitam grandes perdas</h2>
+      <p>Prevenir é o principal. Se o fogo já começou, afaste-se e avise imediatamente os órgãos responsáveis, sem se colocar em risco.</p>
+    </div>
+    <div class="grade g2">
+      <div class="grade" style="gap:18px">
+        <article class="cartao">
+          <h3>Antes do fogo</h3>
+          <ul class="atitudes">
+            <li><span>Não descarte bitucas de cigarro em áreas de vegetação nem na beira da estrada.</span></li>
+            <li><span>Não queime lixo, folhas secas ou restos de vegetação.</span></li>
+            <li><span>Use o fogo apenas quando autorizado e com os cuidados necessários.</span></li>
+            <li><span>Evite atividades que possam provocar faíscas ou iniciar focos de incêndio.</span></li>
+          </ul>
+        </article>
+        <article class="cartao">
+          <h3>Se você vir fogo</h3>
+          <ol class="passos">
+            <li><span>Afaste-se da fumaça e do fogo, sem se colocar em risco.</span></li>
+            <li><span>Avise imediatamente o Corpo de Bombeiros, pelo 193.</span></li>
+            <li><span>Se a fumaça chegar até você, siga as orientações do bloco “Dia de fumaça”, logo acima.</span></li>
+          </ol>
+        </article>
+      </div>
+      <div>
+        <div class="contatos" id="contatos">
+          <div class="contato principal">
+            <span class="orgao">Corpo de Bombeiros</span>
+            <span class="numero">193</span>
+            <button class="botao pequeno" type="button" data-copiar="193" aria-label="Copiar o número 193 do Corpo de Bombeiros">Copiar</button>
+            <span class="uso">Viu fogo? Ligue 193, Corpo de Bombeiros.</span>
+          </div>
+          <div class="contato">
+            <span class="orgao">Disque Denúncia Estadual</span>
+            <span class="numero">181</span>
+            <button class="botao pequeno" type="button" data-copiar="181" aria-label="Copiar o número 181 do Disque Denúncia Estadual">Copiar</button>
+            <span class="uso">Canal de denúncia da campanha.</span>
+          </div>
+          <div class="contato">
+            <span class="orgao">Polícia Militar Ambiental</span>
+            <span class="numero">(67) 3247-5871</span>
+            <button class="botao pequeno" type="button" data-copiar="(67) 3247-5871" aria-label="Copiar o número da Polícia Militar Ambiental">Copiar</button>
+            <span class="uso">Canal de denúncia da campanha.</span>
+          </div>
+          <div class="contato">
+            <span class="orgao">Defesa Civil Estadual</span>
+            <span class="numero">(67) 99607-1525</span>
+            <button class="botao pequeno" type="button" data-copiar="(67) 99607-1525" aria-label="Copiar o número da Defesa Civil Estadual">Copiar</button>
+            <span class="uso">Canal de denúncia da campanha.</span>
+          </div>
+        </div>
+        <p class="sr" id="aviso-copia" aria-live="assertive"></p>
+      </div>
+    </div>
+    <p class="fonte">Fontes: <a href="#f-pecas">folder e cartaz da campanha</a>; <a href="#f-prefeitura">notícia da Prefeitura de Figueirão</a>.</p>
+  </div>
+</section>
+
+<!-- 5. JOGO -->
+<section class="secao escura" id="jogo" aria-labelledby="t-jogo">
+  <div class="envoltorio">
+    <div class="cabeca">
+      <span class="etiqueta sol">Agora é com você</span>
+      <h2 id="t-jogo">Trilha Antes do Fogo</h2>
+      <p>Você já viu o que existe em Figueirão, o que o fogo leva embora e como proteger. Agora é na prática: atravesse a cidade, a estrada e a Serra até a Pedra Bonita, cuidando do caminho antes do fogo.</p>
+    </div>
+    <div class="plat" id="plat">
+      <div class="jogo-barra">
+        <span class="titulo-jogo">Trilha Antes do Fogo</span>
+        <div class="botoes">
+          <button type="button" class="claro" id="plat-ajuda" aria-expanded="true" aria-controls="plat-como">Como jogar</button>
+          <button type="button" class="claro" id="plat-som" aria-pressed="true">Som: ligado</button>
+          <button type="button" class="claro" id="plat-pausar">Pausar</button>
+          <button type="button" id="plat-reiniciar">Reiniciar</button>
+        </div>
+      </div>
+      <div class="plat-hud" aria-live="off">
+        <span id="plat-vidas" class="plat-vidas">♥♥♥</span>
+        <span id="plat-bitucas">Sacola 0/8: 0 bitucas, 0 lixo, 0 folhas · Pontos: 0</span>
+        <span id="plat-fase">Fase 1 de 3: Cidade</span>
+        <span id="plat-status" class="plat-status"></span>
+      </div>
+      <div class="plat-palco">
+        <canvas id="plat-canvas" width="320" height="176" tabindex="0" role="img" aria-label="Jogo de plataforma Trilha Antes do Fogo. Uma criança atravessa a cidade, a estrada de terra e a Serra do Figueirão até a Pedra Bonita. Os avisos do jogo aparecem em texto logo abaixo."></canvas>
+        <div class="plat-sobre" id="plat-sobre">
+          <p class="sobre-titulo">Trilha Antes do Fogo</p>
+          <p class="sobre-texto">Da cidade até a Pedra Bonita</p>
+          <button type="button" class="sobre-botao" id="plat-comecar-sobre">▶ Começar</button>
+        </div>
+      </div>
+      <p class="plat-aviso" id="plat-aviso" aria-live="polite">Toque em “Começar”, no meio da tela do jogo.</p>
+      <div class="plat-controles" aria-label="Controles do jogo">
+        <div class="grupo">
+          <button type="button" data-plat="esq" aria-label="Andar para a esquerda">◀</button>
+          <button type="button" data-plat="dir" aria-label="Andar para a direita">▶</button>
+        </div>
+        <div class="grupo">
+          <button type="button" data-plat="agir" class="agir" aria-keyshortcuts="E ArrowDown">Agir<small class="tecla">tecla E ou ↓</small></button>
+          <button type="button" data-plat="pulo" class="pulo" aria-keyshortcuts="Space ArrowUp">Pular<small class="tecla">espaço ou ↑</small></button>
+        </div>
+      </div>
+      <div class="plat-baixo">
+        <div class="como-jogar" id="plat-como">
+          <h3>Como jogar</h3>
+          <ol>
+            <li>Atravesse 3 fases: a cidade, a estrada de terra e a Serra do Figueirão, até a Pedra Bonita.</li>
+            <li>No celular, use os botões da tela. No computador, use o teclado: setas ← e → (ou A e D) para andar, espaço ou ↑ para pular, <strong>E</strong> ou <strong>↓</strong> para agir e <strong>P</strong> para pausar.</li>
+            <li>Perto de uma bituca, de um saco de lixo, de uma garrafa ou de papelão, aperte “Agir” para pôr na sacola. Folhas secas não se queimam: no monte de folhas, aperte “Agir” várias vezes para varrer e ensacar.</li>
+            <li>A sacola tem 8 espaços, e o monte de folhas ocupa 2. No meio de cada fase há um ecoponto para esvaziar. No fim, pare na lixeira verde e aperte “Agir” para descartar tudo: com a sacola cheia, não dá para passar.</li>
+            <li>Converse com quem vai queimar lixo, soltar balão, pôr fogo no pasto, acender fogueira no capim ou jogar bituca: chegue perto e aperte “Agir”. Se alguém jogar uma bituca acesa, o celular aparece: disque o número da Polícia Militar Ambiental (está na Agenda) e conte o que aconteceu.</li>
+            <li>Na Serra há um mirante. Dali você vê um incêndio ao longe e os bombeiros trabalhando. Decida o que fazer.</li>
+            <li>O que ficar para trás, no chão ou sem conversa, vira foco de incêndio mais à frente. E a fase seguinte já começa pior: fumaça, focos pelo caminho, árvores queimando e caindo, animais fugindo e bombeiros e polícia por toda parte. Quanto mais ficar para trás, mais o Cerrado sofre.</li>
+            <li> Não chegue perto do fogo nem das faíscas: corra ao orelhão e ligue 193.</li>
+            <li>Cuidado com os buracos, a terra solta que desmorona e a plataforma que se move. Os marcos da trilha guardam o ponto de volta. A água devolve uma vida e a máscara protege da fumaça.</li>
+            <li>Cada atitude vale pontos. São 4 finais diferentes e 6 conquistas, e o seu recorde fica guardado neste aparelho.</li>
+          </ol>
+          <button type="button" class="botao" id="plat-comecar" style="margin-top:12px">Começar o jogo</button>
+        </div>
+        <div class="plat-painel" id="plat-painel" hidden></div>
+      </div>
+      <div class="plat-modal" id="plat-modal" role="dialog" aria-modal="true" aria-label="Janela do jogo" hidden>
+        <div class="plat-modal-caixa" id="plat-modal-caixa"></div>
+      </div>
+    </div>
+    <p class="fonte">O jogo segue o <a href="#f-projeto">projeto da Ação 04</a>, as peças da campanha, a notícia da Prefeitura, a <a href="#f-lei12305">Lei nº 12.305/2010</a>, a <a href="#f-lei9605">Lei nº 9.605/1998</a> (art. 42, sobre balões) e as orientações do <a href="#f-saude">Ministério da Saúde</a>. Personagens, cenários e desenhos criados para este site.</p>
+  </div>
+</section>
+
+<!-- 6. ESCOLA -->
+<section class="secao" id="escola" aria-labelledby="t-escola">
+  <div class="envoltorio">
+    <div class="cabeca">
+      <span class="etiqueta">Para a escola</span>
+      <h2 id="t-escola">Quiz, checklist, jogo de escolhas e cartão da turma</h2>
+      <p>Para usar em sala de aula ou em casa. Cada resposta do quiz explica o porquê e mostra a fonte.</p>
+    </div>
+    <div class="grade g2">
+      <div>
+        <h3 style="margin-bottom:10px">Quiz Figueirão Sem Fogo</h3>
+        <div class="quiz" id="quiz"></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:10px">Checklist antes do fogo</h3>
+        <p class="contador" id="check-contador" aria-live="polite"></p>
+        <ul class="checklist" id="checklist"></ul>
+        <button type="button" class="botao secundario pequeno" id="check-limpar" style="margin-top:10px">Desmarcar tudo</button>
+        <p class="fonte">As marcações ficam guardadas só neste aparelho.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:40px" class="cabeca">
+      <h3>Atividade: Antes ou depois?</h3>
+      <p>Um jogo de escolhas para jogar em turma e conversar sobre cada decisão. Projete na sala ou jogue no celular.</p>
+    </div>
+    <div class="jogo" id="jogo-app">
+      <div class="jogo-barra">
+        <span class="titulo-jogo">Antes ou depois?</span>
+        <div class="botoes">
+          <button type="button" class="claro" id="jogo-ajuda" aria-expanded="true" aria-controls="como-jogar">Como jogar</button>
+          <button type="button" id="jogo-reiniciar">Reiniciar</button>
+        </div>
+      </div>
+      <div class="jogo-corpo">
+        <div class="como-jogar" id="como-jogar">
+          <h3>Como jogar</h3>
+          <ol>
+            <li>Escolha quem você vai ser: estudante, produtora rural ou motorista.</li>
+            <li>Leia a situação e toque na sua escolha. Não há tempo correndo.</li>
+            <li>Escolha boa mantém o cartão verde, “Antes do fogo”. Escolha arriscada vira o cartão vermelho, “Depois do fogo”.</li>
+            <li>No caminho aparecem eventos, como vento forte e tarde seca, que mudam o risco.</li>
+            <li>São 4 situações por personagem e 4 finais diferentes. Jogue de novo para descobrir todos.</li>
+          </ol>
+        </div>
+        <div id="jogo-tela" aria-live="polite"></div>
+      </div>
+    </div>
+    <p class="fonte">As situações do jogo seguem as peças da campanha, a notícia da Prefeitura, a <a href="#f-lei12305">Lei nº 12.305/2010</a>, a <a href="#f-lei9605">Lei nº 9.605/1998</a> e as orientações do <a href="#f-saude">Ministério da Saúde</a>.</p>
+
+    <div style="margin-top:40px" class="cabeca">
+      <h3>Crie o cartão da sua turma</h3>
+      <p>Escreva um “antes” e um “depois” sobre um lugar de Figueirão que a turma conhece. O cartão aparece no estilo da campanha. Depois, é só tirar um print e levar para o mural.</p>
+    </div>
+    <div class="cartao-criar">
+      <form id="form-cartao" class="cartao">
+        <label for="cc-antes">Antes do fogo</label>
+        <textarea id="cc-antes" rows="2" maxlength="120">A Pedra Bonita tem capim, árvores e bichos ao redor.</textarea>
+        <label for="cc-depois">Depois do fogo</label>
+        <textarea id="cc-depois" rows="2" maxlength="120">O fogo deixa o solo exposto e a chuva carrega a terra.</textarea>
+        <label for="cc-turma">Turma</label>
+        <textarea id="cc-turma" rows="1" maxlength="40">6º ano</textarea>
+      </form>
+      <div class="previa" id="previa" aria-live="polite">
+        <span class="faixa v">Antes do fogo</span>
+        <span class="txt v" id="pv-antes"></span>
+        <span class="faixa r">Depois do fogo</span>
+        <span class="txt r" id="pv-depois"></span>
+        <div class="rodape-previa"><span id="pv-turma"></span><img src="midia/img/selo-figueirao-sem-fogo.png" alt="" width="60" height="57"></div>
+      </div>
+    </div>
+
+    <div class="cartao" style="margin-top:24px">
+      <h3>Materiais da campanha para a sala</h3>
+      <p>Os folders trazem o conteúdo “Por que o Cerrado é importante para Figueirão?” e os canais de denúncia.</p>
+      <div class="acoes" style="margin-top:12px">
+        <a class="botao pequeno" href="midia/docs/folder-a5-figueirao-sem-fogo.pdf" target="_blank" rel="noopener">Folder A5 (PDF, 1,1 MB)</a>
+        <a class="botao pequeno" href="midia/docs/folder-triptico-figueirao-sem-fogo.pdf" target="_blank" rel="noopener">Folder tríptico (PDF, 2,7 MB)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. MEMÓRIA -->
+<section class="secao clara" id="memoria" aria-labelledby="t-memoria">
+  <div class="envoltorio">
+    <div class="cabeca">
+      <span class="etiqueta">Memória</span>
+      <h2 id="t-memoria">O que a campanha fez</h2>
+      <p>Registro do que foi executado, com a prova de cada etapa.</p>
+    </div>
+
+    <div class="grade g2">
+      <div>
+        <h3 style="margin-bottom:14px">Linha do tempo</h3>
+        <ol class="linha-tempo" id="linha-tempo"></ol>
+      </div>
+      <div>
+        <h3 style="margin-bottom:14px">Resultados</h3>
+        <div class="numeros" id="numeros"></div>
+        <p class="fonte">Fontes: <a href="#f-declaracao">declaração da emissora</a>; fotos de divulgação da Prefeitura.</p>
+      </div>
+    </div>
+
+    <div class="spot" style="margin-top:40px">
+      <div>
+        <h3>Spot de rádio</h3>
+        <p>40 segundos, veiculado na Rádio Recanto das Águas (Super FM).</p>
+        <audio controls preload="none" src="midia/audio/spot-figueirao-sem-fogo.mp3">Seu navegador não toca áudio. O texto do spot está ao lado.</audio>
+        <blockquote>“Antes do fogo, a Serra do Figueirão tem fauna, nascentes e histórias para contar. Depois do fogo, só resta o que não deu tempo de salvar. Bituca de cigarro, queimada mal controlada e queima de lixo colocam tudo isso em risco. Faça sua parte: previna incêndios. Viu fogo? Ligue 193, Corpo de Bombeiros. Figueirão Sem Fogo. Proteja a Serra. Proteja vidas. Uma campanha da Prefeitura Municipal de Figueirão.”</blockquote>
+        <p class="fonte">Texto transcrito na <a href="#f-declaracao">declaração de veiculação</a>.</p>
+      </div>
+      <div class="cartao">
+        <h3>Inserções por dia</h3>
+        <p>30 inserções em 13 dias, de 19 a 31 de outubro de 2026, às 9h30 e às 15h30. Nos dias 20 e 26, houve uma inserção a mais, às 17h.</p>
+        <div class="insercoes" id="insercoes" role="img" aria-label="Gráfico de barras: 2 inserções por dia de 19 a 31 de outubro, com 3 inserções nos dias 20 e 26."></div>
+        <div class="insercoes-dias" id="insercoes-dias" aria-hidden="true"></div>
+        <div class="legenda-prop"><span><b style="background:var(--folha)"></b>2 inserções</span><span><b style="background:var(--brasa)"></b>3 inserções</span></div>
+      </div>
+    </div>
+
+    <div style="margin-top:40px">
+      <h3 style="margin-bottom:6px">Fotos da divulgação</h3>
+      <p class="foto-legenda" style="margin-bottom:12px">Cartazes fixados em Figueirão. Fotos: Prefeitura Municipal de Figueirão.</p>
+      <div class="galeria paisagem" id="galeria-fotos"></div>
+    </div>
+
+    <div style="margin-top:40px">
+      <h3 style="margin-bottom:6px">As artes da campanha</h3>
+      <p class="foto-legenda" style="margin-bottom:12px">Carrossel para as redes sociais, folders e cartaz.</p>
+      <div class="galeria artes" id="galeria-artes"></div>
+    </div>
+
+    <div style="margin-top:40px">
+      <h3 style="margin-bottom:6px">Nas redes e no site da Prefeitura</h3>
+      <div class="galeria prints" id="galeria-prints"></div>
+      <p class="fonte">Links: <a href="https://www.facebook.com/story.php?story_fbid=1427173832854960&amp;id=100066870705070" target="_blank" rel="noopener">publicação no Facebook</a>; <a href="https://www.figueirao.ms.gov.br/figueirao-sem-fogo-prevenir-queimadas-e-proteger-o-cerrado-a-fauna-e-a-populacao/" target="_blank" rel="noopener">notícia no site da Prefeitura</a>.</p>
+    </div>
+
+    <div style="margin-top:40px">
+      <h3 style="margin-bottom:12px">Relatos</h3>
+      <div id="relatos"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. OUTROS PROJETOS -->
+<section class="secao" id="projetos" aria-labelledby="t-projetos">
+  <div class="envoltorio">
+    <div class="cabeca">
+      <span class="etiqueta">Outros projetos</span>
+      <h2 id="t-projetos">Mais educação ambiental em Figueirão</h2>
+      <p>Outros projetos de educação ambiental do município.</p>
+    </div>
+    <div id="lista-projetos"></div>
+  </div>
+</section>
+
+</main>
+
+<!-- 9. RODAPÉ -->
+<footer class="rodape" id="fontes">
+  <div class="envoltorio">
+    <h2>Realização</h2>
+    <p>Campanha Figueirão Sem Fogo: prevenção a queimadas e proteção da Unidade de Conservação. Prefeitura Municipal de Figueirão, por meio da Secretaria Municipal de Turismo, Cultura e Meio Ambiente. Assessoria técnica: NOVAeng Engenharia.</p>
+    <div class="realizacao">
+      <img class="logo-fundo" src="midia/img/logo-secretaria.png" alt="Secretaria Municipal de Turismo, Cultura e Meio Ambiente de Figueirão" width="145" height="115">
+      <img class="logo-fundo" src="midia/img/logo-prefeitura-figueirao.png" alt="Prefeitura Municipal de Figueirão" width="328" height="117">
+      <img class="logo-fundo" src="midia/img/logo-novaeng.png" alt="NOVAeng" width="300" height="85">
+    </div>
+
+    <h2 style="margin-top:30px" id="redes">Acompanhe a Prefeitura</h2>
+    <p>Notícias e avisos de Figueirão nos canais oficiais da Prefeitura Municipal.</p>
+    <ul class="redes" aria-label="Redes sociais e site da Prefeitura de Figueirão">
+      <li><a href="https://www.facebook.com/Figueirao29092003" target="_blank" rel="noopener"><span class="rede-nome">Facebook</span><span class="rede-conta">Ti Figueirão</span></a></li>
+      <li><a href="https://instagram.com/municipio.figueirao" target="_blank" rel="noopener"><span class="rede-nome">Instagram</span><span class="rede-conta">@municipio.figueirao</span></a></li>
+      <li><a href="https://www.figueirao.ms.gov.br/" target="_blank" rel="noopener"><span class="rede-nome">Site oficial</span><span class="rede-conta">figueirao.ms.gov.br</span></a></li>
+    </ul>
+
+    <h2 style="margin-top:30px">Fontes</h2>
+    <ol>
+      <li id="f-projeto">NOVAeng; Prefeitura Municipal de Figueirão. Campanha “Figueirão Sem Fogo”: prevenção a queimada e proteção da UC. Ficha técnica da Ação 04 do Pré-Projeto de Educação Ambiental de Figueirão/MS (SisEA/MS). Campo Grande, 22 set. 2026.</li>
+      <li id="f-roteiro">NOVAeng. Roteiro de publicação da campanha “Figueirão Sem Fogo” (carrossel “Antes do fogo / Depois do fogo”). Campo Grande, 16 out. 2026. Imagens do carrossel: banco de imagens do Canva e Prefeitura de Figueirão (Pedra Bonita).</li>
+      <li id="f-pecas">Campanha “Figueirão Sem Fogo”. Folder tríptico, folder A5 e cartaz A2. Prefeitura Municipal de Figueirão; NOVAeng, 2026.</li>
+      <li id="f-declaracao">Rádio Recanto das Águas (Super FM). Declaração de veiculação do spot da campanha “Figueirão Sem Fogo”, 19 a 31 out. 2026.</li>
+      <li id="f-prefeitura">Prefeitura Municipal de Figueirão. “Figueirão Sem Fogo: prevenir queimadas é proteger o Cerrado, a fauna e a população”. <a href="https://www.figueirao.ms.gov.br/figueirao-sem-fogo-prevenir-queimadas-e-proteger-o-cerrado-a-fauna-e-a-populacao/" target="_blank" rel="noopener">Site oficial</a> e <a href="https://www.facebook.com/story.php?story_fbid=1427173832854960&amp;id=100066870705070" target="_blank" rel="noopener">página no Facebook</a>, out. 2026.</li>
+      <li id="f-cemtec">Cemtec; Asbom. Informativo nº 01/CICOE-PEMIF/2026: monitoramento de incêndios florestais do Estado de Mato Grosso do Sul, 01/01/2026 a 15/07/2026. <a href="https://www.cemtec.ms.gov.br/wp-content/uploads/2026/07/INFORMATIVO_INCENDIOS_No01_MS_COM-PREVENCAO-3.pdf" target="_blank" rel="noopener">PDF</a>.</li>
+      <li id="f-icms">Mato Grosso do Sul. Semadesc. Resolução Semadesc/MS nº 132, de 27 nov. 2025: índices definitivos do ICMS Ecológico para 2026, Anexo III. DOE nº 12.008, 28 nov. 2025. <a href="https://www.imasul.ms.gov.br/wp-content/uploads/2026/01/Resolucao-Semadesc-MS-n.-132-2025-INDICES-DEFINITIVOS-do-ICMS-Ecologico-para-2026.pdf" target="_blank" rel="noopener">PDF</a>.</li>
+      <li id="f-lei12305">Brasil. Lei nº 12.305, de 2 ago. 2010 (Política Nacional de Resíduos Sólidos), art. 47, III. <a href="https://www2.camara.leg.br/legin/fed/lei/2010/lei-12305-2-agosto-2010-607598-normaatualizada-pl.html" target="_blank" rel="noopener">Texto atualizado</a>.</li>
+      <li id="f-lei9605">Brasil. Lei nº 9.605, de 12 fev. 1998 (Lei de Crimes Ambientais), arts. 41 e 42. <a href="https://www2.camara.leg.br/legin/fed/lei/1998/lei-9605-12-fevereiro-1998-365397-normaatualizada-pl.html" target="_blank" rel="noopener">Texto atualizado</a>.</li>
+      <li id="f-lei14944">Brasil. Lei nº 14.944, de 31 jul. 2024 (Política Nacional de Manejo Integrado do Fogo), art. 2º. <a href="https://www2.camara.leg.br/legin/fed/lei/2024/lei-14944-31-julho-2024-796016-normaatualizada-pl.html" target="_blank" rel="noopener">Texto atualizado</a>.</li>
+      <li id="f-saude">Ministério da Saúde. Orientações para a população sobre a fumaça das queimadas. Agência Gov, 21 jul. 2026. <a href="https://agenciagov.ebc.com.br/noticias/202607/15-estados-na-lista-de-focos-de-calor-veja-como-se-cuidar" target="_blank" rel="noopener">Notícia</a>.</li>
+    </ol>
+    <p class="creditos">Imagens: fotos de divulgação da Prefeitura Municipal de Figueirão; artes da campanha Figueirão Sem Fogo (Prefeitura de Figueirão e NOVAeng), com imagens do banco do Canva; Pedra Bonita: Prefeitura de Figueirão. Ilustrações do site: NOVAeng.</p>
+    <p class="creditos">Rascunho v6 · novembro de 2026.</p>
+  </div>
+</footer>
+
+<script src="assets/js/projetos.js"></script>
+<script src="assets/js/memoria.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/escola.js"></script>
+<script src="assets/js/jogo.js"></script>
+<script src="assets/js/plataforma.js"></script>
+
+</body></html>
